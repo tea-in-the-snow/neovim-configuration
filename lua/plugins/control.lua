@@ -7,10 +7,6 @@ return {
   },
   {
     "nvimtools/none-ls.nvim",
-    enabled = true,
-  },
-  {
-    "lukas-reineke/headlines.nvim",
     enabled = false,
   },
 }
