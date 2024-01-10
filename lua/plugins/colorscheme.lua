@@ -2,7 +2,38 @@ return {
   -- add gruvbox
   --{ "ellisonleao/gruvbox.nvim" },
   --{ "rebelot/kanagawa.nvim" },
-  --{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
+  -- { "rebelot/kanagawa.nvim" },
+  {
+    "EdenEast/nightfox.nvim",
+    lazy = true,
+    name = "nightfox",
+    opts = {
+      options = {
+        transparent = false, -- Disable setting background
+        terminal_colors = false, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
+        dim_inactive = true, -- Non focused panes set to alternative background
+        module_default = true, -- Default enable value for modules
+        styles = { -- Style to be applied to different syntax groups
+          comments = "italic", -- Value is any valid attr-list value `:help attr-list`
+          conditionals = "NONE",
+          constants = "NONE",
+          functions = "undercurl",
+          keywords = "bold",
+          numbers = "NONE",
+          operators = "NONE",
+          strings = "NONE",
+          types = "italic",
+          variables = "NONE",
+        },
+        inverse = { -- Inverse highlight for different types
+          match_paren = true,
+          visual = true,
+          search = true,
+        },
+      },
+    },
+  },
 
   {
     "catppuccin/nvim",
@@ -52,8 +83,10 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      --colorscheme = "catppuccin-latte", --light theme
-      colorscheme = "catppuccin-macchiato",
+      -- colorscheme = "kanagawa-dragon",
+      -- colorscheme = "catppuccin-latte", --light theme
+      colorscheme = "dayfox", --light theme
+      -- colorscheme = "catppuccin-macchiato",
       --colorscheme = "catppuccin-mocha",  --dark theme
       --colorscheme = "kanagawa",
     },
