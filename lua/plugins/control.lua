@@ -9,4 +9,8 @@ return {
     "lukas-reineke/headlines.nvim",
     enabled = false,
   },
+  {
+    "toppair/peek.nvim",
+    enabled = false,
+  },
 }
