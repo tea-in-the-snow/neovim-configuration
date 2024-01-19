@@ -13,4 +13,12 @@ return {
     "toppair/peek.nvim",
     enabled = false,
   },
+  {
+    "tzachar/cmp-tabnine",
+    enabled = false,
+  },
+  -- {
+  --   "jose-elias-alvarez/null-ls.nvim",
+  --   enabled = false,
+  -- },
 }
