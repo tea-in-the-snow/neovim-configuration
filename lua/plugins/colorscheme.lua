@@ -86,6 +86,7 @@ return {
       -- colorscheme = "kanagawa-dragon",
       -- colorscheme = "catppuccin-latte", --light theme
       colorscheme = "dayfox", --light theme
+      -- colorscheme = "nordfox", --dark theme
       -- colorscheme = "catppuccin-macchiato",
       --colorscheme = "catppuccin-mocha",  --dark theme
       --colorscheme = "kanagawa",
