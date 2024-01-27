@@ -85,8 +85,9 @@ return {
     opts = {
       -- colorscheme = "kanagawa-dragon",
       -- colorscheme = "catppuccin-latte", --light theme
-      colorscheme = "dayfox", --light theme
-      -- colorscheme = "nordfox", --dark theme
+      -- colorscheme = "dayfox", --light theme
+      colorscheme = "nordfox", --dark theme
+      -- colorscheme = "nightfox", --dark theme
       -- colorscheme = "catppuccin-macchiato",
       --colorscheme = "catppuccin-mocha",  --dark theme
       --colorscheme = "kanagawa",
