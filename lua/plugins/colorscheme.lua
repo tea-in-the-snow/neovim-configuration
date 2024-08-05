@@ -18,7 +18,7 @@ return {
           comments = "italic", -- Value is any valid attr-list value `:help attr-list`
           conditionals = "NONE",
           constants = "NONE",
-          functions = "undercurl",
+          functions = "underline",
           keywords = "bold",
           numbers = "NONE",
           operators = "NONE",
@@ -85,11 +85,11 @@ return {
     opts = {
       -- colorscheme = "kanagawa-dragon",
       -- colorscheme = "catppuccin-latte", --light theme
-      colorscheme = "dayfox", --light theme
+      -- colorscheme = "dayfox", --light theme
       -- colorscheme = "nordfox", --dark theme
-      -- colorscheme = "nightfox", --dark theme
+      colorscheme = "nightfox", --dark theme
       -- colorscheme = "catppuccin-macchiato",
-      --colorscheme = "catppuccin-mocha",  --dark theme
+      -- colorscheme = "catppuccin-mocha", --dark theme
       --colorscheme = "kanagawa",
     },
   },
