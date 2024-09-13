@@ -40,7 +40,32 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
-      transparent_background = true,
+      transparent_background = false,
+      dim_inactive = {
+        enabled = true,
+        shade = "dark",
+        percentage = 0.15,
+      },
+      no_italic = false, -- Force no italic
+      no_bold = false, -- Force no bold
+      no_underline = false, -- Force no underline
+      show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+      term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+      styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = { "italic" }, -- Change the style of comments
+        conditionals = {},
+        loops = {},
+        functions = {},
+        keywords = { "bold" },
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = {},
+        -- miscs = {}, -- Uncomment to turn off hard-coded styles
+      },
       integrations = {
         aerial = true,
         alpha = true,
@@ -79,6 +104,21 @@ return {
     },
   },
 
+  {
+    "Mofiqul/dracula.nvim",
+    lazy = true,
+    opts = {
+      -- show the '~' characters after the end of buffers
+      show_end_of_buffer = false, -- default false
+      -- use transparent background
+      transparent_bg = false, -- default false
+      -- set custom lualine background color
+      -- lualine_bg_color = "#44475a", -- default nil
+      -- set italic comment
+      italic_comment = true, -- default false
+    },
+  },
+
   -- Configure LazyVim to load the colorscheme
   {
     "LazyVim/LazyVim",
@@ -87,8 +127,9 @@ return {
       -- colorscheme = "catppuccin-latte", --light theme
       -- colorscheme = "dayfox", --light theme
       -- colorscheme = "nordfox", --dark theme
-      colorscheme = "nightfox", --dark theme
+      -- colorscheme = "nightfox", --dark theme
       -- colorscheme = "catppuccin-macchiato",
+      colorscheme = "dracula",
       -- colorscheme = "catppuccin-mocha", --dark theme
       --colorscheme = "kanagawa",
     },
