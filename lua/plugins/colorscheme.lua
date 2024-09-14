@@ -109,7 +109,7 @@ return {
     lazy = true,
     opts = {
       -- show the '~' characters after the end of buffers
-      show_end_of_buffer = false, -- default false
+      show_end_of_buffer = true, -- default false
       -- use transparent background
       transparent_bg = false, -- default false
       -- set custom lualine background color
@@ -128,8 +128,9 @@ return {
       -- colorscheme = "dayfox", --light theme
       -- colorscheme = "nordfox", --dark theme
       -- colorscheme = "nightfox", --dark theme
+      colorscheme = "catppuccin-frappe",
       -- colorscheme = "catppuccin-macchiato",
-      colorscheme = "dracula",
+      -- colorscheme = "dracula",
       -- colorscheme = "catppuccin-mocha", --dark theme
       --colorscheme = "kanagawa",
     },
